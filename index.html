@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <title>Search_People</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container inputs mx-auto">
+  		<div class="row">
+			<div class="col mr-3">
+				<h4>Name:</h4>
+				<input name="searchName" type="text" maxlength="512" class="search_name"/>
+			</div>
+			<div class="col mr-3">
+				<h4>Surname:</h4>
+				<input name="searchSurname" type="text" maxlength="512" class="search_surname"/>
+			</div>
+			<div class="col mr-3">
+				<h4>City:</h4>
+				<input name="searchCity" type="text" maxlength="512" class="search_city"/>
+			</div>
+			<div class="col-sm mr-3">
+				<button type="button" class="btn btn-primary btn-lg" onclick="Search()">Search</button>
+			</div>
+		</div>
+	</div>
+	<table class="table p-5" id="table"></table>
+	
+</body>
+<script language="JavaScript" src="task.js"> </script>
+</html>
